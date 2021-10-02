@@ -40,6 +40,7 @@ import { Theme, ThemeContext } from "./theme";
 import { FaBeer, FaCoffee, FaPalette } from "react-icons/fa";
 // @ts-ignore
 import TinaIconSvg from "../public/tina.svg";
+// @ts-ignore
 import OrgLogoSvg from "../public/logo.svg";
 
 const biIconOptions = {
