@@ -2,8 +2,7 @@
 blocks:
   - tagline: ''
     headline: dreamineering
-    text: >-
-      ![](http://res.cloudinary.com/dreamineering/image/upload/v1446389162/sample.jpg)
+    text: ''
     image:
       src: >-
         http://res.cloudinary.com/dreamineering/image/upload/v1446389162/sample.jpg
