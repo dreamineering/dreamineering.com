@@ -40,6 +40,7 @@ import { Theme, ThemeContext } from "./theme";
 import { FaBeer, FaCoffee, FaPalette } from "react-icons/fa";
 // @ts-ignore
 import TinaIconSvg from "../public/tina.svg";
+import OrgLogoSvg from "../public/logo.svg";
 
 const biIconOptions = {
   code: BiCodeBlock,
@@ -62,6 +63,7 @@ const biIconOptions = {
   world: BiWorld,
   aperture: FiAperture,
   tina: TinaIconSvg,
+  logo: OrgLogoSvg,
 };
 
 const heroIconOptions = {
@@ -85,6 +87,7 @@ const heroIconOptions = {
   world: BiWorld,
   aperture: FiAperture,
   tina: TinaIconSvg,
+  logo: OrgLogoSvg,
 };
 
 export const Icon = ({ data, parentColor = "", className = "" }) => {
