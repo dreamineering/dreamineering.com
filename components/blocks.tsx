@@ -3,6 +3,7 @@ import type { Pages } from "../.tina/__generated__/types";
 import { Content } from "./blocks/content";
 import { Features } from "./blocks/features";
 import { Hero } from "./blocks/hero";
+import { HeroHome } from "./blocks/herohome";
 import { Testimonial } from "./blocks/testimonial";
 
 export const Blocks = (props: Pages) => {
@@ -21,6 +22,12 @@ export const Blocks = (props: Pages) => {
                 return (
                   <React.Fragment key={i + block.__typename}>
                     <Hero data={block} />
+                  </React.Fragment>
+                );
+              case "PagesBlocksHerohome":
+                return (
+                  <React.Fragment key={i + block.__typename}>
+                    <HeroHome data={block} />
                   </React.Fragment>
                 );
               case "PagesBlocksFeatures":

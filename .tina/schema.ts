@@ -381,6 +381,105 @@ const heroBlockSchema: TinaTemplate = {
   ],
 };
 
+const herohomeBlockSchema: TinaTemplate = {
+  name: "herohome",
+  label: "Hero Home",
+  ui: {
+    defaultItem: {
+      tagline: "Hero for home page",
+      headline: "Home headline",
+      text: "Take me home",
+    },
+  },
+  fields: [
+    {
+      type: "string",
+      label: "Tagline",
+      name: "tagline",
+    },
+    {
+      type: "string",
+      label: "Headline",
+      name: "headline",
+    },
+    {
+      type: "string",
+      label: "Text",
+      name: "text",
+      ui: {
+        component: "markdown",
+      },
+    },
+    {
+      label: "Actions",
+      name: "actions",
+      type: "object",
+      list: true,
+      ui: {
+        defaultItem: {
+          label: "Action Label",
+          type: "button",
+          icon: true,
+          link: "/",
+        },
+      },
+      fields: [
+        {
+          label: "Label",
+          name: "label",
+          type: "string",
+        },
+        {
+          label: "Type",
+          name: "type",
+          type: "string",
+          options: [
+            { label: "Button", value: "button" },
+            { label: "Link", value: "link" },
+          ],
+        },
+        {
+          label: "Icon",
+          name: "icon",
+          type: "boolean",
+        },
+        {
+          label: "Link",
+          name: "link",
+          type: "string",
+        },
+      ],
+    },
+    {
+      type: "object",
+      label: "Image",
+      name: "image",
+      fields: [
+        {
+          name: "src",
+          label: "Image Source",
+          type: "image",
+        },
+        {
+          name: "alt",
+          label: "Alt Text",
+          type: "string",
+        },
+      ],
+    },
+    {
+      type: "string",
+      label: "Color",
+      name: "color",
+      options: [
+        { label: "Default", value: "default" },
+        { label: "Tint", value: "tint" },
+        { label: "Primary", value: "primary" },
+      ],
+    },
+  ],
+};
+
 export default defineSchema({
   collections: [
     {
@@ -651,6 +750,7 @@ export default defineSchema({
           label: "Sections",
           templates: [
             heroBlockSchema,
+            herohomeBlockSchema,
             featureBlockShema,
             contentBlockSchema,
             testimonialBlockSchema,
