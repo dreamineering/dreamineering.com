@@ -38,6 +38,11 @@ export const Home = ({ data }) => {
             />
           </svg>
         </div>
+        {data.tagline && (
+          <h2 className="text-lg sm:text-xl inline-block mx-auto mt-10 font-normal tracking-wide title-font uppercase">
+            {data.tagline}
+          </h2>
+        )}
       </Container>
     </Section>
   );
