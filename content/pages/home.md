@@ -2,6 +2,7 @@
 blocks:
   - tagline: Hero for home page
     headline: Home headline
-    text: Take me hodfme
+    text: home
     _template: home
 ---
+
