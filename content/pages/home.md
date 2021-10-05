@@ -1,7 +1,7 @@
 ---
 blocks:
-  - tagline: Hero for home page
-    headline: Home headline
+  - tagline: ''
+    headline: ''
     text: eat it sucker
     _template: home
 ---
