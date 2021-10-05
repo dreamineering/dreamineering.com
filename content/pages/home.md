@@ -2,7 +2,7 @@
 blocks:
   - tagline: Here's some text above the other text
     headline: This Big Text is Totally Awesome
-    text: ''
+    text: hkjdkljjkl
     _template: hero
 ---
 
