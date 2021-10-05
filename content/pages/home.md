@@ -1,8 +1,8 @@
 ---
 blocks:
-  - tagline: Here's some text above the other text
-    headline: This Big Text is Totally Awesome
-    text: hkjdkljjkl
-    _template: hero
+  - tagline: Hero for home page
+    headline: Home headline
+    text: Take me hodfme
+    _template: herohome
 ---
 
