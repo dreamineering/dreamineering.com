@@ -82,7 +82,7 @@ export const getStaticProps = async ({ params }) => {
     variables: { relativePath: `${params.filename}.md` },
   })) as { data: { getPagesDocument: PagesDocument } };
 
-  console.log("tina props", tinaProps);
+  //console.log("tina props", tinaProps);
 
   return {
     props: {

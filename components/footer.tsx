@@ -31,7 +31,7 @@ export const Footer = ({ data, icon, rawData }) => {
       blue: "text-white from-blue-500 to-blue-700",
       teal: "text-white from-teal-500 to-teal-600",
       green: "text-white from-green-500 to-green-600",
-      red: "text-white from-red-500 to-red-600",
+      red: "text-white from-#B91C1C to-#B91C1C",
       pink: "text-white from-pink-500 to-pink-600",
       purple: "text-white from-purple-500 to-purple-600",
       orange: "text-white from-orange-500 to-orange-600",
@@ -61,7 +61,7 @@ export const Footer = ({ data, icon, rawData }) => {
               />
             </a>
           </Link>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             {data.social && data.social.facebook && (
               <a
                 className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
@@ -122,14 +122,14 @@ export const Footer = ({ data, icon, rawData }) => {
                 />
               </a>
             )}
-          </div>
-          <RawRenderer parentColor={data.color} rawData={rawData} />
+          </div> */}
+          {/* <RawRenderer parentColor={data.color} rawData={rawData} /> */}
         </div>
-        <div
+        {/* <div
           className={`absolute h-1 bg-gradient-to-r from-transparent ${
             data.color === "primary" ? `via-white` : `via-black dark:via-white`
           } to-transparent top-0 left-4 right-4 opacity-5`}
-        ></div>
+        ></div> */}
       </Container>
     </footer>
   );

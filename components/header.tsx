@@ -15,7 +15,8 @@ export const Header = ({ data }) => {
       blue: "text-white from-blue-300 to-blue-500",
       teal: "text-white from-teal-400 to-teal-500",
       green: "text-white from-green-400 to-green-500",
-      red: "text-white from-red-400 to-red-500",
+      red: "text-white from-red to-red",
+      //red: "text-white from-#B91C1C to-#B91C1C",
       pink: "text-white from-pink-400 to-pink-500",
       purple: "text-white from-purple-400 to-purple-500",
       orange: "text-white from-orange-400 to-orange-500",
@@ -42,52 +43,15 @@ export const Header = ({ data }) => {
   const router = useRouter();
 
   return (
-    <div className={`bg-gradient-to-b ${headerColorCss}`}>
+    <div className="bg-white">
       <Container className="py-0 relative z-10 max-w-8xl">
-        <div className="flex items-center justify-between">
-          <h4 className="select-none text-lg font-bold tracking-tight my-4 transition duration-150 ease-out transform">
+        <div className="flex items-center">
+          <h4 className="mx-auto select-none text-2xl md:text-3xl lg:text-4xl font-light tracking-widest my-4 uppercase">
             <Link href="/" passHref>
-              <a className="flex items-center">
-                <Icon
-                  parentColor={data.color}
-                  data={{
-                    name: data.icon.name,
-                    color: data.icon.color,
-                    size: "custom",
-                  }}
-                  className="inline-block h-auto w-10 mr-1"
-                />{" "}
-                Dreamineering
-              </a>
+              <a className="flex items-center">Dreamineering</a>
             </Link>
           </h4>
-          <ul className="flex gap-6 sm:gap-8 lg:gap-10">
-            {data.nav &&
-              data.nav.map((item, i) => {
-                const route =
-                  router.asPath === "/" ? "home" : router.asPath || "home";
-                const href = item.href || "home";
-                const activeItem = route.includes(href);
-                return (
-                  <li
-                    key={`${item.label}-${i}`}
-                    className={activeItem ? activeItemClasses[theme.color] : ""}
-                  >
-                    <Link href={`/${item.href || "home"}`}>
-                      <a className="select-none	text-base inline-block tracking-wide font-regular transition duration-150 ease-out opacity-70 hover:opacity-100 py-8">
-                        {item.label}
-                      </a>
-                    </Link>
-                  </li>
-                );
-              })}
-          </ul>
         </div>
-        <div
-          className={`absolute h-1 bg-gradient-to-r from-transparent ${
-            data.color === "primary" ? `via-white` : `via-black dark:via-white`
-          } to-transparent bottom-0 left-4 right-4 -z-1 opacity-5`}
-        ></div>
       </Container>
     </div>
   );
