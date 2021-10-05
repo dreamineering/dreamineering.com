@@ -1,8 +1,8 @@
 ---
 blocks:
   - tagline: ''
-    headline: dreamineering
-    text: eat it sucker
+    headline: ''
+    text: ''
     _template: home
 ---
 
