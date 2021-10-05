@@ -5,21 +5,7 @@
       "style": "float",
       "name": "logo"
     },
-    "color": "primary",
-    "nav": [
-      {
-        "href": "",
-        "label": "Home"
-      },
-      {
-        "href": "about",
-        "label": "About"
-      },
-      {
-        "href": "posts",
-        "label": "Blog"
-      }
-    ]
+    "color": "primary"
   },
   "footer": {
     "color": "default",
