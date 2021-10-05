@@ -58,6 +58,22 @@ export const getStaticProps = async ({ params }) => {
                   alt
                 }
               }
+              ... on PagesBlocksHome {
+                tagline
+                headline
+                text
+                actions {
+                  label
+                  type
+                  icon
+                  link
+                }
+                color
+                image {
+                  src
+                  alt
+                }
+              }
             }
           }
         }
@@ -65,6 +81,8 @@ export const getStaticProps = async ({ params }) => {
   `,
     variables: { relativePath: `${params.filename}.md` },
   })) as { data: { getPagesDocument: PagesDocument } };
+
+  console.log("tina props", tinaProps);
 
   return {
     props: {

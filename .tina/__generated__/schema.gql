@@ -219,24 +219,24 @@ type PagesBlocksHero {
   color: String
 }
 
-type PagesBlocksHerohomeActions {
+type PagesBlocksHomeActions {
   label: String
   type: String
   icon: Boolean
   link: String
 }
 
-type PagesBlocksHerohomeImage {
+type PagesBlocksHomeImage {
   src: String
   alt: String
 }
 
-type PagesBlocksHerohome {
+type PagesBlocksHome {
   tagline: String
   headline: String
   text: String
-  actions: [PagesBlocksHerohomeActions]
-  image: PagesBlocksHerohomeImage
+  actions: [PagesBlocksHomeActions]
+  image: PagesBlocksHomeImage
   color: String
 }
 
@@ -268,7 +268,7 @@ type PagesBlocksTestimonial {
   color: String
 }
 
-union PagesBlocks = PagesBlocksHero | PagesBlocksHerohome | PagesBlocksFeatures | PagesBlocksContent | PagesBlocksTestimonial
+union PagesBlocks = PagesBlocksHero | PagesBlocksHome | PagesBlocksFeatures | PagesBlocksContent | PagesBlocksTestimonial
 
 type Pages {
   blocks: [PagesBlocks]
@@ -387,24 +387,24 @@ input PagesBlocksHeroMutation {
   color: String
 }
 
-input PagesBlocksHerohomeActionsMutation {
+input PagesBlocksHomeActionsMutation {
   label: String
   type: String
   icon: Boolean
   link: String
 }
 
-input PagesBlocksHerohomeImageMutation {
+input PagesBlocksHomeImageMutation {
   src: String
   alt: String
 }
 
-input PagesBlocksHerohomeMutation {
+input PagesBlocksHomeMutation {
   tagline: String
   headline: String
   text: String
-  actions: [PagesBlocksHerohomeActionsMutation]
-  image: PagesBlocksHerohomeImageMutation
+  actions: [PagesBlocksHomeActionsMutation]
+  image: PagesBlocksHomeImageMutation
   color: String
 }
 
@@ -438,7 +438,7 @@ input PagesBlocksTestimonialMutation {
 
 input PagesBlocksMutation {
   hero: PagesBlocksHeroMutation
-  herohome: PagesBlocksHerohomeMutation
+  home: PagesBlocksHomeMutation
   features: PagesBlocksFeaturesMutation
   content: PagesBlocksContentMutation
   testimonial: PagesBlocksTestimonialMutation

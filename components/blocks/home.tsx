@@ -5,7 +5,7 @@ import { Container } from "../container";
 import { Section } from "../section";
 import { ThemeContext } from "../theme";
 
-export const HeroHome = ({ data }) => {
+export const Home = ({ data }) => {
   const theme = React.useContext(ThemeContext);
   const headlineColorClasses = {
     blue: "from-blue-400 to-blue-600",

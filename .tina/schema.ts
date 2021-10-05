@@ -381,9 +381,9 @@ const heroBlockSchema: TinaTemplate = {
   ],
 };
 
-const herohomeBlockSchema: TinaTemplate = {
-  name: "herohome",
-  label: "Hero Home",
+const homeBlockSchema: TinaTemplate = {
+  name: "home",
+  label: "Home Block",
   ui: {
     defaultItem: {
       tagline: "Hero for home page",
@@ -750,7 +750,7 @@ export default defineSchema({
           label: "Sections",
           templates: [
             heroBlockSchema,
-            herohomeBlockSchema,
+            homeBlockSchema,
             featureBlockShema,
             contentBlockSchema,
             testimonialBlockSchema,

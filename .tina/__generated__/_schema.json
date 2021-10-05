@@ -785,8 +785,8 @@
               ]
             },
             {
-              "name": "herohome",
-              "label": "Hero Home",
+              "name": "home",
+              "label": "Home Block",
               "ui": {
                 "defaultItem": {
                   "tagline": "Hero for home page",
@@ -802,7 +802,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "herohome",
+                    "home",
                     "tagline"
                   ]
                 },
@@ -813,7 +813,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "herohome",
+                    "home",
                     "headline"
                   ]
                 },
@@ -827,7 +827,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "herohome",
+                    "home",
                     "text"
                   ]
                 },
@@ -852,7 +852,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "herohome",
+                        "home",
                         "actions",
                         "label"
                       ]
@@ -874,7 +874,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "herohome",
+                        "home",
                         "actions",
                         "type"
                       ]
@@ -886,7 +886,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "herohome",
+                        "home",
                         "actions",
                         "icon"
                       ]
@@ -898,7 +898,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "herohome",
+                        "home",
                         "actions",
                         "link"
                       ]
@@ -907,7 +907,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "herohome",
+                    "home",
                     "actions"
                   ]
                 },
@@ -923,7 +923,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "herohome",
+                        "home",
                         "image",
                         "src"
                       ]
@@ -935,7 +935,7 @@
                       "namespace": [
                         "pages",
                         "blocks",
-                        "herohome",
+                        "home",
                         "image",
                         "alt"
                       ]
@@ -944,7 +944,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "herohome",
+                    "home",
                     "image"
                   ]
                 },
@@ -969,7 +969,7 @@
                   "namespace": [
                     "pages",
                     "blocks",
-                    "herohome",
+                    "home",
                     "color"
                   ]
                 }
@@ -977,7 +977,7 @@
               "namespace": [
                 "pages",
                 "blocks",
-                "herohome"
+                "home"
               ]
             },
             {

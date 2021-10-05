@@ -2937,7 +2937,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksHerohomeActions"
+        "value": "PagesBlocksHomeActions"
       },
       "fields": [
         {
@@ -3008,7 +3008,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksHerohomeImage"
+        "value": "PagesBlocksHomeImage"
       },
       "fields": [
         {
@@ -3049,7 +3049,7 @@
       "directives": [],
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksHerohome"
+        "value": "PagesBlocksHome"
       },
       "fields": [
         {
@@ -3110,7 +3110,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksHerohomeActions"
+                "value": "PagesBlocksHomeActions"
               }
             }
           }
@@ -3126,7 +3126,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksHerohomeImage"
+              "value": "PagesBlocksHomeImage"
             }
           }
         },
@@ -3419,7 +3419,7 @@
           "kind": "NamedType",
           "name": {
             "kind": "Name",
-            "value": "PagesBlocksHerohome"
+            "value": "PagesBlocksHome"
           }
         },
         {
@@ -4836,7 +4836,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksHerohomeActionsMutation"
+        "value": "PagesBlocksHomeActionsMutation"
       },
       "fields": [
         {
@@ -4901,7 +4901,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksHerohomeImageMutation"
+        "value": "PagesBlocksHomeImageMutation"
       },
       "fields": [
         {
@@ -4938,7 +4938,7 @@
       "kind": "InputObjectTypeDefinition",
       "name": {
         "kind": "Name",
-        "value": "PagesBlocksHerohomeMutation"
+        "value": "PagesBlocksHomeMutation"
       },
       "fields": [
         {
@@ -4995,7 +4995,7 @@
               "kind": "NamedType",
               "name": {
                 "kind": "Name",
-                "value": "PagesBlocksHerohomeActionsMutation"
+                "value": "PagesBlocksHomeActionsMutation"
               }
             }
           }
@@ -5010,7 +5010,7 @@
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksHerohomeImageMutation"
+              "value": "PagesBlocksHomeImageMutation"
             }
           }
         },
@@ -5285,13 +5285,13 @@
           "kind": "InputValueDefinition",
           "name": {
             "kind": "Name",
-            "value": "herohome"
+            "value": "home"
           },
           "type": {
             "kind": "NamedType",
             "name": {
               "kind": "Name",
-              "value": "PagesBlocksHerohomeMutation"
+              "value": "PagesBlocksHomeMutation"
             }
           }
         },

@@ -550,8 +550,8 @@
               ]
             },
             {
-              "name": "herohome",
-              "label": "Hero Home",
+              "name": "home",
+              "label": "Home Block",
               "ui": {
                 "defaultItem": {
                   "tagline": "Hero for home page",
