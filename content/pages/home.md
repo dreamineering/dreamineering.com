@@ -1,6 +1,6 @@
 ---
 blocks:
-  - tagline: optimise flow
+  - tagline: optimise decision flow
     headline: ''
     text: ''
     _template: home
