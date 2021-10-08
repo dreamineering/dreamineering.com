@@ -8,6 +8,10 @@ import { Container } from "./container";
 import { RawRenderer } from "./rawRenderer";
 import { ThemeContext } from "./theme";
 import { Icon } from "./icon";
+import { IconDream } from "./icons/icon-dream";
+import { IconLearn } from "./icons/icon-learn";
+import { IconMeasure } from "./icons/icon-measure";
+import { IconAct } from "./icons/icon-act";
 
 export const Footer = ({ data, icon, rawData }) => {
   const theme = React.useContext(ThemeContext);
@@ -45,91 +49,45 @@ export const Footer = ({ data, icon, rawData }) => {
       : footerColor.default;
 
   return (
-    <footer className={`bg-gradient-to-br ${footerColorCss}`}>
+    <footer className={`bg-white`}>
       <Container className="relative" size="small">
-        <div className="flex justify-between items-center gap-6 flex-wrap">
-          <Link href="/" passHref>
-            <a className="group mx-2 flex items-center font-bold tracking-tight text-gray-400 dark:text-gray-300 opacity-50 hover:opacity-100 transition duration-150 ease-out whitespace-nowrap">
-              <Icon
-                parentColor={data.color}
-                data={{
-                  name: icon.name,
-                  color: data.color === "primary" ? "primary" : icon.color,
-                  size: "custom",
-                }}
-                className="inline-block h-10 w-auto group-hover:text-orange-500"
-              />
-            </a>
-          </Link>
-          {/* <div className="flex gap-4">
-            {data.social && data.social.facebook && (
-              <a
-                className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
-                href={data.social.facebook}
-                target="_blank"
-              >
-                <FaFacebookF
-                  className={`${socialIconClasses} ${
-                    socialIconColorClasses[
-                      data.color === "primary" ? "primary" : theme.color
-                    ]
-                  }`}
-                />
-              </a>
-            )}
-            {data.social && data.social.twitter && (
-              <a
-                className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
-                href={data.social.twitter}
-                target="_blank"
-              >
-                <FaTwitter
-                  className={`${socialIconClasses} ${
-                    socialIconColorClasses[
-                      data.color === "primary" ? "primary" : theme.color
-                    ]
-                  }`}
-                />
-              </a>
-            )}
-            {data.social && data.social.instagram && (
-              <a
-                className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
-                href={data.social.instagram}
-                target="_blank"
-              >
-                <AiFillInstagram
-                  className={`${socialIconClasses} ${
-                    socialIconColorClasses[
-                      data.color === "primary" ? "primary" : theme.color
-                    ]
-                  }`}
-                />
-              </a>
-            )}
-            {data.social && data.social.github && (
-              <a
-                className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
-                href={data.social.github}
-                target="_blank"
-              >
-                <FaGithub
-                  className={`${socialIconClasses} ${
-                    socialIconColorClasses[
-                      data.color === "primary" ? "primary" : theme.color
-                    ]
-                  }`}
-                />
-              </a>
-            )}
-          </div> */}
-          {/* <RawRenderer parentColor={data.color} rawData={rawData} /> */}
+        <div className="flex">
+          <p className="flex-1 text-center">
+            Vision without action is a daydream
+            <br />
+            Action without vision is a nightmare
+          </p>
         </div>
-        {/* <div
-          className={`absolute h-1 bg-gradient-to-r from-transparent ${
-            data.color === "primary" ? `via-white` : `via-black dark:via-white`
-          } to-transparent top-0 left-4 right-4 opacity-5`}
-        ></div> */}
+        <div className="flex my-8 mx-6 md:mx-24">
+          <div className="w-1/4">
+            <div className="w-1/3 mx-auto">
+              <a href="https://mm.dreamineering.com/dream" target="_blank">
+                <IconDream />
+              </a>
+            </div>
+          </div>
+          <div className="w-1/4 inline-block">
+            <div className="w-1/3 mx-auto">
+              <a href="https://mm.dreamineering.com/act" target="_blank">
+                <IconAct />
+              </a>
+            </div>
+          </div>
+          <div className="w-1/4 inline-block">
+            <div className="w-1/3 mx-auto">
+              <a href="https://mm.dreamineering.com/measure" target="_blank">
+                <IconMeasure />
+              </a>
+            </div>
+          </div>
+          <div className="w-1/4 inline-block">
+            <div className="w-1/3 mx-auto">
+              <a href="https://mm.dreamineering.com/learn" target="_blank">
+                <IconLearn />
+              </a>
+            </div>
+          </div>
+        </div>
       </Container>
     </footer>
   );

@@ -123,7 +123,7 @@ export const Icon = ({ data, parentColor = "", className = "" }) => {
     blue: "text-blue-400",
     teal: "text-teal-400",
     green: "text-green-400",
-    red: "text-red-400",
+    red: "#B91C1C",
     pink: "text-pink-400",
     purple: "text-purple-400",
     orange: "text-orange-400",
