@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "yarn tinacms server:start -c \"next dev\"",
     "build": "yarn tinacms server:start -c \"next build\"",
-    "start": "yarn tinacms server:start -c \"next start\"",
+    "start": "TAILWIND_MODE=watch yarn tinacms server:start -c \"next start\"",
     "export": "yarn build && next export"
   },
   "devDependencies": {
