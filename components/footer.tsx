@@ -51,42 +51,42 @@ export const Footer = ({ data, icon, rawData }) => {
   return (
     <footer className={`bg-white`}>
       <Container className="relative" size="small">
-        <div className="flex">
-          <p className="flex-1 text-center">
-            Vision without action is a daydream
-            <br />
-            Action without vision is a nightmare
-          </p>
-        </div>
         <div className="flex my-8 mx-6 md:mx-24">
           <div className="w-1/4">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/dream" target="_blank">
+              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
                 <IconDream />
               </a>
             </div>
           </div>
           <div className="w-1/4 inline-block">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/act" target="_blank">
+              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
                 <IconAct />
               </a>
             </div>
           </div>
           <div className="w-1/4 inline-block">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/measure" target="_blank">
+              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
                 <IconMeasure />
               </a>
             </div>
           </div>
           <div className="w-1/4 inline-block">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/learn" target="_blank">
+              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
                 <IconLearn />
               </a>
             </div>
           </div>
+        </div>
+        <div className="flex">
+          <p className="flex-1 text-center text-sm">
+            Vision without action is a daydream
+            <br />
+            Action without vision is a nightmare
+          </p>
         </div>
       </Container>
     </footer>
