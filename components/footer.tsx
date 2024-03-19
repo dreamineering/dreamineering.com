@@ -54,28 +54,28 @@ export const Footer = ({ data, icon, rawData }) => {
         <div className="flex my-8 mx-6 md:mx-24">
           <div className="w-1/4">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
+              <a href="https://mm.dreamineering.com" target="_blank">
                 <IconDream />
               </a>
             </div>
           </div>
           <div className="w-1/4 inline-block">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
+              <a href="https://mm.dreamineering.com" target="_blank">
                 <IconAct />
               </a>
             </div>
           </div>
           <div className="w-1/4 inline-block">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
+              <a href="https://mm.dreamineering.com" target="_blank">
                 <IconMeasure />
               </a>
             </div>
           </div>
           <div className="w-1/4 inline-block">
             <div className="w-1/3 mx-auto">
-              <a href="https://mm.dreamineering.com/docs/intro" target="_blank">
+              <a href="https://mm.dreamineering.com" target="_blank">
                 <IconLearn />
               </a>
             </div>
